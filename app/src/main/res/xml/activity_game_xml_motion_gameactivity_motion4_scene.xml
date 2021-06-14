@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <KeyFrameSet>
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/constSet_motion4_end_1_1" >
+        <Constraint
+            android:layout_height="100dp"
+            motion:layout_constraintStart_toStartOf="@+id/card_gameActivity_motion4_card1Top"
+            motion:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion4_card1Top"
+            motion:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion4_card1Top"
+            motion:layout_constraintEnd_toEndOf="@+id/card_gameActivity_motion4_card1Top"
+            android:layout_width="100dp"
+            android:id="@+id/imageView6"
+            android:elevation="2dp" />
+        <Constraint
+            android:id="@+id/card_gameActivity_motion4_card1Top"
+            motion:layout_constraintEnd_toStartOf="@+id/card_gameActivity_motion4_card2Top"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion4_card2Top"
+            android:visibility="invisible"
+            android:layout_marginStart="10dp"
+            motion:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion4_card2Top"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:elevation="0dp" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/constSet_motion4_end_1_1"
+        motion:duration="700"
+        motion:motionInterpolator="easeInOut"
+        android:id="@+id/tran_gameActivity_motion4_to_1_1">
+        <KeyFrameSet >
+            <KeyAttribute
+                motion:motionTarget="@+id/imageView6"
+                motion:framePosition="50"
+                android:translationX="30dp" />
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet
+        android:id="@+id/constSet_motion4_end_1_2">
+        <Constraint
+            android:layout_height="100dp"
+            motion:layout_constraintStart_toStartOf="@+id/card_gameActivity_motion4_card2Top"
+            motion:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion4_card1Top"
+            motion:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion4_card1Top"
+            motion:layout_constraintEnd_toEndOf="@+id/card_gameActivity_motion4_card2Top"
+            android:layout_width="100dp"
+            android:id="@+id/imageView6" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/constSet_motion4_end_1_2"
+        motion:duration="700"
+        android:id="@+id/tran_gameActivity_motion4_to_1_2"
+        motion:motionInterpolator="easeInOut"
+        motion:autoTransition="none">
+        <KeyFrameSet >
+            <KeyAttribute
+                motion:motionTarget="@+id/imageView6"
+                motion:framePosition="50"
+                android:translationX="-30dp" />
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/constSet_motion4_end_1_3" >
+        <Constraint
+            android:layout_height="100dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion4_card3Top"
+            motion:layout_constraintEnd_toEndOf="@+id/card_gameActivity_motion4_card3Top"
+            android:layout_width="100dp"
+            motion:layout_constraintStart_toStartOf="@+id/card_gameActivity_motion4_card3Top"
+            android:id="@+id/imageView6"
+            motion:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion4_card3Top" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/constSet_motion4_end_1_3"
+        android:id="@+id/tran_gameActivity_motion4_to_1_3"
+        motion:motionInterpolator="easeInOut"
+        motion:duration="700" >
+        <KeyFrameSet >
+            <KeyAttribute
+                motion:motionTarget="@+id/imageView6"
+                motion:framePosition="50"
+                android:translationX="-30dp" />
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/constSet_motion4_end_2_1" >
+        <Constraint
+            android:layout_height="100dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion4_card1Middle"
+            motion:layout_constraintEnd_toEndOf="@+id/card_gameActivity_motion4_card1Middle"
+            android:layout_width="100dp"
+            motion:layout_constraintStart_toStartOf="@+id/card_gameActivity_motion4_card1Middle"
+            android:id="@+id/imageView6"
+            motion:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion4_card1Middle" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/constSet_motion4_end_2_1"
+        android:id="@+id/tran_gameActivity_motion4_to_2_1"
+        motion:motionInterpolator="easeInOut"
+        motion:duration="700" >
+        <KeyFrameSet >
+            <KeyAttribute
+                motion:motionTarget="@+id/imageView6"
+                motion:framePosition="50"
+                android:translationX="20dp" />
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/constSet_motion4_end_2_2" >
+        <Constraint
+            android:layout_height="100dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion4_card2Middle"
+            motion:layout_constraintEnd_toEndOf="@+id/card_gameActivity_motion4_card2Middle"
+            android:layout_width="100dp"
+            motion:layout_constraintStart_toStartOf="@+id/card_gameActivity_motion4_card2Middle"
+            android:id="@+id/imageView6"
+            motion:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion4_card2Middle" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/constSet_motion4_end_2_2"
+        android:id="@+id/tran_gameActivity_motion4_to_2_2"
+        motion:motionInterpolator="easeInOut"
+        motion:duration="700" >
+        <KeyFrameSet >
+            <KeyAttribute
+                motion:motionTarget="@+id/imageView6"
+                motion:framePosition="50"
+                android:translationX="-20dp" />
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/constSet_motion4_end_2_3" >
+        <Constraint
+            android:layout_height="100dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion4_card3Middle"
+            motion:layout_constraintEnd_toEndOf="@+id/card_gameActivity_motion4_card3Middle"
+            android:layout_width="100dp"
+            motion:layout_constraintStart_toStartOf="@+id/card_gameActivity_motion4_card3Middle"
+            android:id="@+id/imageView6"
+            motion:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion4_card3Middle" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/constSet_motion4_end_2_3"
+        android:id="@+id/tran_gameActivity_motion4_to_2_3"
+        motion:motionInterpolator="easeInOut"
+        motion:duration="700" >
+        <KeyFrameSet >
+            <KeyAttribute
+                motion:motionTarget="@+id/imageView6"
+                motion:framePosition="50"
+                android:translationX="40dp" />
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/constSet_motion4_end_3_1" >
+        <Constraint
+            android:layout_height="100dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion4_card1Bottom"
+            motion:layout_constraintEnd_toEndOf="@+id/card_gameActivity_motion4_card1Bottom"
+            android:layout_width="100dp"
+            motion:layout_constraintStart_toStartOf="@+id/card_gameActivity_motion4_card1Bottom"
+            android:id="@+id/imageView6"
+            motion:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion4_card1Bottom" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/constSet_motion4_end_3_1"
+        android:id="@+id/tran_gameActivity_motion4_to_3_1"
+        motion:motionInterpolator="easeInOut"
+        motion:duration="700" >
+        <KeyFrameSet >
+            <KeyAttribute
+                motion:motionTarget="@+id/imageView6"
+                motion:framePosition="50"
+                android:translationX="-20dp" />
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/constSet_motion4_end_3_2" >
+        <Constraint
+            android:layout_height="100dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion4_card2Bottom"
+            motion:layout_constraintEnd_toEndOf="@+id/card_gameActivity_motion4_card2Bottom"
+            android:layout_width="100dp"
+            motion:layout_constraintStart_toStartOf="@+id/card_gameActivity_motion4_card2Bottom"
+            android:id="@+id/imageView6"
+            motion:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion4_card2Bottom" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/constSet_motion4_end_3_2"
+        android:id="@+id/tran_gameActivity_motion4_to_3_2"
+        motion:motionInterpolator="easeInOut"
+        motion:duration="700" >
+        <KeyFrameSet >
+            <KeyAttribute
+                motion:motionTarget="@+id/imageView6"
+                motion:framePosition="50"
+                android:translationX="-20dp" />
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/constSet_motion4_end_3_3" >
+        <Constraint
+            android:layout_height="100dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion4_card3Bottom"
+            motion:layout_constraintEnd_toEndOf="@+id/card_gameActivity_motion4_card3Bottom"
+            android:layout_width="100dp"
+            android:id="@+id/imageView6"
+            motion:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion4_card3Bottom"
+            motion:layout_constraintStart_toStartOf="@+id/card_gameActivity_motion4_card3Bottom" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/constSet_motion4_end_3_3"
+        android:id="@+id/tran_gameActivity_motion4_to_3_3"
+        motion:motionInterpolator="easeInOut"
+        motion:duration="700"
+        motion:autoTransition="none">
+        <KeyFrameSet >
+            <KeyAttribute
+                motion:motionTarget="@+id/imageView6"
+                motion:framePosition="50"
+                android:translationX="20dp"
+                />
+        </KeyFrameSet>
+    </Transition>
+
+</MotionScene>
