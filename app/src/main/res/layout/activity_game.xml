@@ -156,7 +156,7 @@
                 android:src="@drawable/ic_baseline_fiber_manual_record_24"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.33"
+                app:layout_constraintHorizontal_bias="0.25"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/card_gameActivity_motion1_card1Bottom"
                 app:layout_constraintVertical_bias="0.2"
@@ -285,6 +285,298 @@
 
 
 
+
+
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/motion_gameActivity_motion2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:elevation="4dp"
+            app:layoutDescription="@xml/activity_game_xml_motion_gameactivity_motion2_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_fiber_manual_record_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.75"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_gameActivity_motion2_card1Bottom"
+                app:layout_constraintVertical_bias="0.2"
+                app:tint="#F60303" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_gameActivity_motion2_card1Top"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="@dimen/myCardViewCornerRadius"
+                app:cardElevation="@dimen/myCardViewElev"
+                app:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion2_card2Top"
+                app:layout_constraintEnd_toStartOf="@+id/card_gameActivity_motion2_card2Top"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion2_card2Top" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_gameActivity_motion2_card2Top"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="@dimen/myCardViewCornerRadius"
+                app:cardElevation="@dimen/myCardViewElev"
+                app:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion2_card3Top"
+                app:layout_constraintEnd_toStartOf="@+id/card_gameActivity_motion2_card3Top"
+                app:layout_constraintStart_toEndOf="@id/card_gameActivity_motion2_card1Top"
+                app:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion2_card3Top" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_gameActivity_motion2_card3Top"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="@dimen/myCardViewCornerRadius"
+                app:cardElevation="@dimen/myCardViewElev"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/card_gameActivity_motion2_card2Top"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_gameActivity_motion2_card1Middle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="@dimen/myCardViewCornerRadius"
+                app:cardElevation="@dimen/myCardViewElev"
+                app:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion2_card2Middle"
+                app:layout_constraintEnd_toStartOf="@+id/card_gameActivity_motion2_card2Middle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion2_card2Middle" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_gameActivity_motion2_card2Middle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="@dimen/myCardViewCornerRadius"
+                app:cardElevation="@dimen/myCardViewElev"
+                app:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion2_card3Middle"
+                app:layout_constraintEnd_toStartOf="@+id/card_gameActivity_motion2_card3Middle"
+                app:layout_constraintStart_toEndOf="@+id/card_gameActivity_motion2_card1Middle"
+                app:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion2_card3Middle" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_gameActivity_motion2_card3Middle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="@dimen/myCardViewCornerRadius"
+                app:cardElevation="@dimen/myCardViewElev"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/card_gameActivity_motion2_card2Top"
+                app:layout_constraintTop_toBottomOf="@+id/card_gameActivity_motion2_card3Top" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_gameActivity_motion2_card1Bottom"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="@dimen/myCardViewCornerRadius"
+                app:cardElevation="@dimen/myCardViewElev"
+                app:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion2_card2Bottom"
+                app:layout_constraintEnd_toStartOf="@+id/card_gameActivity_motion2_card2Bottom"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion2_card2Bottom" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_gameActivity_motion2_card2Bottom"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="@dimen/myCardViewCornerRadius"
+                app:cardElevation="@dimen/myCardViewElev"
+                app:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion2_card3Bottom"
+                app:layout_constraintEnd_toStartOf="@+id/card_gameActivity_motion2_card3Bottom"
+                app:layout_constraintStart_toEndOf="@+id/card_gameActivity_motion2_card1Bottom"
+                app:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion2_card3Bottom" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_gameActivity_motion2_card3Bottom"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="@dimen/myCardViewCornerRadius"
+                app:cardElevation="@dimen/myCardViewElev"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/card_gameActivity_motion2_card2Bottom"
+                app:layout_constraintTop_toBottomOf="@+id/card_gameActivity_motion2_card3Middle" />
+
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+
+
+
+
+
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/motion_gameActivity_motion3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:elevation="4dp"
+            app:layoutDescription="@xml/activity_game_xml_motion_gameactivity_motion3_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_fiber_manual_record_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_gameActivity_motion3_card1Bottom"
+                app:layout_constraintVertical_bias="0.2"
+                app:tint="#1DBA24" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_gameActivity_motion3_card1Top"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="@dimen/myCardViewCornerRadius"
+                app:cardElevation="@dimen/myCardViewElev"
+                app:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion3_card2Top"
+                app:layout_constraintEnd_toStartOf="@+id/card_gameActivity_motion3_card2Top"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion3_card2Top" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_gameActivity_motion3_card2Top"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="@dimen/myCardViewCornerRadius"
+                app:cardElevation="@dimen/myCardViewElev"
+                app:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion3_card3Top"
+                app:layout_constraintEnd_toStartOf="@+id/card_gameActivity_motion3_card3Top"
+                app:layout_constraintStart_toEndOf="@id/card_gameActivity_motion3_card1Top"
+                app:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion3_card3Top" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_gameActivity_motion3_card3Top"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="@dimen/myCardViewCornerRadius"
+                app:cardElevation="@dimen/myCardViewElev"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/card_gameActivity_motion3_card2Top"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_gameActivity_motion3_card1Middle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="@dimen/myCardViewCornerRadius"
+                app:cardElevation="@dimen/myCardViewElev"
+                app:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion3_card2Middle"
+                app:layout_constraintEnd_toStartOf="@+id/card_gameActivity_motion3_card2Middle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion3_card2Middle" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_gameActivity_motion3_card2Middle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="@dimen/myCardViewCornerRadius"
+                app:cardElevation="@dimen/myCardViewElev"
+                app:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion3_card3Middle"
+                app:layout_constraintEnd_toStartOf="@+id/card_gameActivity_motion3_card3Middle"
+                app:layout_constraintStart_toEndOf="@+id/card_gameActivity_motion3_card1Middle"
+                app:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion3_card3Middle" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_gameActivity_motion3_card3Middle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="@dimen/myCardViewCornerRadius"
+                app:cardElevation="@dimen/myCardViewElev"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/card_gameActivity_motion3_card2Top"
+                app:layout_constraintTop_toBottomOf="@+id/card_gameActivity_motion3_card3Top" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_gameActivity_motion3_card1Bottom"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="@dimen/myCardViewCornerRadius"
+                app:cardElevation="@dimen/myCardViewElev"
+                app:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion3_card2Bottom"
+                app:layout_constraintEnd_toStartOf="@+id/card_gameActivity_motion3_card2Bottom"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion3_card2Bottom" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_gameActivity_motion3_card2Bottom"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="@dimen/myCardViewCornerRadius"
+                app:cardElevation="@dimen/myCardViewElev"
+                app:layout_constraintBottom_toBottomOf="@+id/card_gameActivity_motion3_card3Bottom"
+                app:layout_constraintEnd_toStartOf="@+id/card_gameActivity_motion3_card3Bottom"
+                app:layout_constraintStart_toEndOf="@+id/card_gameActivity_motion3_card1Bottom"
+                app:layout_constraintTop_toTopOf="@+id/card_gameActivity_motion3_card3Bottom" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_gameActivity_motion3_card3Bottom"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="@dimen/myCardViewCornerRadius"
+                app:cardElevation="@dimen/myCardViewElev"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/card_gameActivity_motion3_card2Bottom"
+                app:layout_constraintTop_toBottomOf="@+id/card_gameActivity_motion3_card3Middle" />
+
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
